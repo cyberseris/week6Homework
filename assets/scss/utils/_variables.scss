@@ -47,6 +47,7 @@ $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 $gray31: #4f4f4f !default;
+$main: lightgray !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -64,7 +65,8 @@ $colors: (
   "black": $black,
   "white": $white,
   "gray": $gray-600,
-  "gray-dark": $gray-800) !default;
+  "gray-dark": $gray-800,
+  "main": $main) !default;
 // scss-docs-end colors-map
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -298,10 +300,12 @@ $light: $gray-100 !default;
 $dark: $black !default;
 $yellow-main: $yellow !default; // scss-docs-end theme-color-variables
 $body-bg: $gray-main !default;
+$main: $gray-main !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "body-bg": $body-bg,
+  "main":$main,
   "primary": $primary,
   "secondary": $secondary,
   "success": $success,

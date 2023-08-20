@@ -1,11 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
+@import './utils/mixin';
 @import './utils/variables';
 @import "./utils/utilities";
 
 @import './base/base';
 @import './base/reset';
-@import './utils/mixin';
+
 
 @import './components/button';
 @import './components/pagination';

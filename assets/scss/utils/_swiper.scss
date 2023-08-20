@@ -17,4 +17,10 @@
     background: $black;
     white-space: nowrap;
     overflow: hidden;
+
+    @include pad {
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }

@@ -84,7 +84,19 @@
         background: $black !important;
     }
 
-    @include mobile {
-        font-size: 14px;
+    @include pad {
+        font-size: 14px !important;
+    }
+}
+
+.eventContent {
+    .container {
+        p {
+            font-size: 22px;
+
+            @include pad {
+                font-size: 16px !important;
+            }
+        }
     }
 }
