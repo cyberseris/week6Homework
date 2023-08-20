@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/headLink'); -%>
+    <title>登入頁面</title>
+</head>
+<body>
+
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/headerCollapse'); -%>
+
+    <div class="login">
+        <div class=" container">
+            <div class="row">
+                <div class="col-8 col-sm-6 col-lg-4 mx-auto">
+
+                    <form action="#" class="loginForm d-flex flex-column">
+                        <span class="mb-16 mx-auto"><img src="../assets/images/sparkler.png" alt="sparkler.png"></span>
+                        <h1 class="mb-16 fs-24 mx-auto fw-bold">會員登入</h1>
+                        <label for="account" class="mb-8">帳號</label>
+                        <input type="text" name="account" id="account" placeholder="請輸入帳號" class="mb-16 py-8 ps-16">
+                        <label for="password" class="mb-8">密碼</label>
+                        <input type="password" name="password" id="password" placeholder="請輸入密碼" class="mb-32 py-8 ps-16">
+                        <a href="#" class="btn btn-dark text-white w-100">登入</a>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>

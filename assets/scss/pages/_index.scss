@@ -1,0 +1,172 @@
+.menuItem {
+  height: 100%;
+
+  a {
+    display: block;
+    padding: 35px 58px;
+    border: 3px solid $black;
+    flex-grow: 1;
+
+    @include pc-xxl {
+      padding: 30px 20px;
+    }
+
+    &:hover {
+      color: $yellow;
+
+      @include pc-xxl {
+        font-size: 16px !important;
+        padding: 30px 20px;
+      }
+    }
+
+    img {
+      margin-bottom: 12px;
+      min-width: 80px;
+      min-height: 80px;
+
+      @include pad {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+}
+
+.menuMore {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &:hover {
+      color: $white !important;
+    }
+
+    @include mobile {
+      font-size: 24px !important;
+    }
+  }
+}
+
+.groupCard {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+
+.eventCard {
+  background: lightgray !important;
+  height: 100%;
+
+  @include pc-xl {
+    h3 {
+      font-size: 32px !important;
+    }
+  }
+
+  .eventImg {
+    display: flex;
+    justify-content: center;
+
+    img {
+      /* max-width: 416px; */
+      height: 255px;
+      object-fit: cover;
+    }
+  }
+
+  .cardBody {
+    flex-grow: 1 !important;
+
+    .cardText {
+      flex-grow: 1 !important;
+    }
+  }
+}
+
+
+
+.albumItem {
+
+  max-width: 306px !important;
+
+  &:nth-child(2n) {
+    transform: translate(0%) rotate(2deg) !important;
+  }
+
+  &:nth-child(3) {
+    transform: translate(0%) rotate(-2deg) !important;
+  }
+
+
+  .item {
+    position: relative;
+
+
+    img {
+      object-fit: cover;
+      height: 274px;
+    }
+
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+
+    .h2-transform {
+      transform: translate(-50%, -50%) rotate(-4deg) !important;
+    }
+  }
+}
+
+.onlineContent {
+  height: 317px;
+  overflow: hidden !important;
+  position: relative !important;
+
+
+  img {
+    width: 100%;
+    position: absolute !important;
+    top: -285px !important;
+  }
+}
+
+.dividedBanner {
+  h3 {
+    letter-spacing: 3.2px;
+  }
+}
+
+.contactCard {
+  background: lightgray !important;
+  height: 100%;
+}
+
+.contactItem {
+  .card {
+    .contactBody {
+      flex-grow: 1 !important;
+    }
+  }
+}
+
+.hover-text-decoration:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.hover-bg-yellow:hover {
+  background-color: $yellow !important;
+  border-radius: 50px;
+}
+
+.hover-bg-white:hover {
+  background-color: $white;
+  border-radius: 50px;
+}

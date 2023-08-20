@@ -1,0 +1,40 @@
+.search {
+    width: 335px;
+    height: 55px;
+    border: 2px solid black !important;
+
+    input[type="text"] {
+        padding: 16px 0 16px 24px;
+    }
+
+    .searchIcon {
+        width: 51px;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+
+        @include pad {
+            width: 39px;
+            height: 100% !important;
+        }
+    }
+
+    @include pad {
+        width: 207px;
+        height: 39px;
+    }
+}
+
+.navbar .container-fluid {
+    background: lightgray !important;
+}
+
+.navLink {
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.navbar-collapse {
+    position: fixed;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/headLink'); -%>
+    <title>訂單確認</title>
+</head>
+<body>
+
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/headerCollapse'); -%>
+
+    <div class="login">
+        <div class=" container">
+            <div class="row mt-60 mb-60">
+                <div class="col-md-6 mx-auto">
+      
+                    <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative mb-48">
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0">1</p>
+                        <p class="fw-bold mb-0">訂單確認</p>
+                      </li>
+                      
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center mb-0">2</p>
+                        <p class="fw-bold mb-0">結帳付款</p>
+                      </li>
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
+                        <p class="fw-bold mb-0">訂單結果</p>
+                      </li>
+                    </ol>
+
+                    <h1 class="fs-48 mb-32">返老還童-制服聯誼</h1>
+                    
+                    <div class="d-flex justify-content-between border-top border-2 py-8">
+                        <span>日期</span>
+                        <span>2023/5/12</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-top py-8">
+                        <span>票種</span>
+                        <span>改頭換面票（含大改造）</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-top border-bottom py-8">
+                        <span>票種</span>
+                        <span>$8000</span>
+                    </div>
+
+                    <form action="#" class="loginForm d-flex flex-column">
+                        <span class="mb-16 mx-auto"><img src="../assets/images/sparkler.png" alt="sparkler.png"></span>
+                        <h1 class="mb-16 fs-24 mx-auto fw-bold">聯絡人資料</h1>
+                        <label for="name" class="mb-8 fw-normal">聯絡人姓名</label>
+                        <input type="text" name="name" id="name" placeholder="請輸入聯絡人名稱" class="mb-16 py-8 ps-16">
+                        <label for="email" class="mb-8 fw-normal">Email</label>
+                        <input type="email" name="email" id="email" placeholder="請輸入Email" class="mb-32 py-8 ps-16">
+
+                        <label for="tel" class="mb-8 fw-normal">手機</label>
+                        <input type="tel" name="tel" id="tel" placeholder="請輸手機號碼" class="mb-32 py-8 ps-16">
+                        <a href="payment.html" class="btn btn-dark text-white d-flex justify-content-center align-items-center mx-auto mb-16 py-8 w-50"><span class="">確認表單資料</span><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span></a>
+                        <a href="index.html" class="text-center">取消購票</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>

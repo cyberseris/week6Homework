@@ -1,0 +1,90 @@
+.year {
+    min-height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .day {
+        h2 {
+            margin: 0px;
+            font-size: 22px;
+
+            @include padFirst {
+                margin-bottom: 126px;
+                font-size: 48px;
+            }
+        }
+    }
+
+    @include padFirst {
+        padding: 48px 44px;
+    }
+}
+
+.date {
+    padding: 14px 24px;
+    min-height: 85px;
+    position: relative;
+    height: 100% !important;
+
+    .day {
+        p {
+            font-size: 32px !important;
+        }
+
+        h2 {
+            margin: 0px;
+            font-size: 22px;
+            height: 100%;
+
+            @include padFirst {
+                margin-bottom: 126px;
+                font-size: 48px;
+            }
+        }
+    }
+
+    .time {
+        @include padFirst {
+            p {
+                font-size: 32px !important;
+            }
+        }
+    }
+
+
+    @include padFirst {
+        padding: 48px 44px;
+    }
+}
+
+.time::before {
+    content: "";
+    width: 3px;
+    height: 55px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(35deg);
+
+}
+
+
+.eventSale {
+    max-width: 112px;
+    min-width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: $white !important;
+        background: $black !important;
+    }
+
+    @include mobile {
+        font-size: 14px;
+    }
+}

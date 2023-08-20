@@ -1,0 +1,19 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border: 2px solid $black;
+    background: lightgray;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.pb-25 {
+    padding-bottom: 25px;
+}

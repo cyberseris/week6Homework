@@ -1,0 +1,14 @@
+.btn-dark {
+    &-hover {
+        color: $yellow;
+    }
+}
+
+.btn-light {
+    color: $dark;
+
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
