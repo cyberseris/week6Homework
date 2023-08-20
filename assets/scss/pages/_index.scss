@@ -148,13 +148,12 @@
   height: 100%;
 }
 
-.contactItem {
-  .card {
-    .contactBody {
-      flex-grow: 1 !important;
-    }
-  }
+
+.contactCard {
+  flex-grow: 1 !important;
+
 }
+
 
 .hover-text-decoration:hover {
   text-decoration: underline !important;
