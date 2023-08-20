@@ -1,7 +1,7 @@
 .search {
     width: 335px;
     height: 55px;
-    border: 2px solid black !important;
+    border: 2px solid $black !important;
 
     input[type="text"] {
         padding: 16px 0 16px 24px;
@@ -25,8 +25,15 @@
     }
 }
 
-.navbar .container-fluid {
-    background: lightgray !important;
+.navbar {
+    .container-fluid {
+        background: $main !important;
+    }
+}
+
+.navbar-toggler-icon {
+    width: 54px;
+    height: 38px;
 }
 
 .navLink {
@@ -37,6 +44,7 @@
 
 .navbar-collapse {
     position: fixed;
+    z-index: 2;
 }
 
 .logo {
