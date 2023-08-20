@@ -38,3 +38,19 @@
 .navbar-collapse {
     position: fixed;
 }
+
+.logo {
+    width: 53px !important;
+    height: 53px !important;
+
+    @include mobile {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+.logoLink {
+    display: block !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}

@@ -1,5 +1,5 @@
 .btn-dark {
-    &-hover {
+    &:hover {
         color: $yellow;
     }
 }
@@ -10,5 +10,14 @@
     &:hover {
         background: $primary;
         color: $white;
+    }
+}
+
+.loginBtn,
+.purchaseBtn,
+.paymentBtn {
+    &:hover {
+        color: $yellow !important;
+        opacity: 0.8;
     }
 }
