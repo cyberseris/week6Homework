@@ -54,19 +54,24 @@
                         <span>改頭換面票（含大改造）$8000</span>
                     </div>
 
-                    <form action="#" class="loginForm d-flex flex-column">
+                    <form action="order.html" class="loginForm d-flex flex-column needs-validation" novalidate>
                         <span class="mb-16 mx-auto"><img src="../assets/images/sparkler.png" alt="sparkler.png"></span>
                         <h3 class="mb-16 fs-24 mx-auto fw-bold">結帳資訊</h3>
                         <label for="ticketInfo" class="mb-8 ">取票資訊</label>
                         <input type="text" name="ticketInfo" id="ticketInfo" placeholder="取票資訊
-                        請輸入身分證字號或護照號碼" class="mb-4 py-8 ps-16">
-                        <span class="mb-16">請輸入您的<span class="text-danger">身分證字號</span>供取票使用，外籍人士請輸入<span class="text-danger">護照號碼</span></span>
+                        請輸入身分證字號或護照號碼" class="py-8 ps-16" required>
+                        <span id="ticketInfoFeedback" class="invalid-feedback">請輸入身分證字號或護照號碼</span>
 
+
+                        <span class="mb-16">請輸入您的<span class="mt-4 text-danger">身分證字號</span>供取票使用，外籍人士請輸入<span class="text-danger">護照號碼</span></span>
+
+                        
                         <label class="mb-8">付款方式</label>
                         <div class="mb-8"><input type="radio" name="creditCard" id="creditCard" value="信用卡" class="me-8"><span>信用卡</span></div>
                         <div class="mb-32"><input type="radio" name="atmAccount" id="atmAccount" value="ATM虛擬帳號" class="me-8"><span>ATM虛擬帳號</span></div>
 
-                        <a href="order.html" class="paymentBtn btn btn-dark text-white py-8 w-50 mx-auto">確認訂單並繳費 $8000</a>
+                        <button type="submit" class="paymentBtn btn btn-dark text-white py-8 w-50 mx-auto">確認訂單並繳費 $8000</button>
+                        
                     </form>
                
                 </div>
@@ -98,6 +103,21 @@
     </script>
 
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
+
+                if(form[0].checkValidity()){
+                    window.open("order.html");
+                } 
+
+            });
+        });
+    </script>
 
 
     <script type="module" src="../main.js"></script>
