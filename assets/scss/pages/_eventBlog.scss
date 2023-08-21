@@ -1,19 +1,47 @@
 .year {
     min-height: 85px;
+    max-height: 119px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    .day {
-        h2 {
-            margin: 0px;
-            font-size: 22px !important;
+    @include padFirst {
+        padding: 32px 22px;
+    }
 
-            @include padFirst {
-                margin-bottom: 126px !important;
-                font-size: 48px !important;
-            }
+
+    .eventYear {
+        @include mobile {
+            font-size: 22px !important;
+        }
+    }
+}
+
+
+.time {
+    @include padFirst {
+        p {
+            font-size: 32px !important;
+        }
+    }
+}
+
+
+.eventDate {
+    padding: 14px 24px;
+    min-height: 85px;
+    position: relative;
+
+
+    .day-title {
+        margin: 0px;
+        font-size: 22px !important;
+        height: 100%;
+
+        @include padFirst {
+            margin-bottom: 126px;
+            font-size: 48px !important;
         }
     }
 
@@ -22,41 +50,13 @@
     }
 }
 
-.date {
-    padding: 14px 24px;
-    min-height: 85px;
-    position: relative;
-    height: 100% !important;
 
-    .day {
-        p {
-            font-size: 32px !important;
-        }
+.eventImg {
+    object-fit: cover !important;
+}
 
-        h2 {
-            margin: 0px;
-            font-size: 22px;
-            height: 100%;
-
-            @include padFirst {
-                margin-bottom: 126px;
-                font-size: 48px;
-            }
-        }
-    }
-
-    .time {
-        @include padFirst {
-            p {
-                font-size: 32px !important;
-            }
-        }
-    }
-
-
-    @include padFirst {
-        padding: 48px 44px;
-    }
+.eventPage {
+    flex-grow: 1;
 }
 
 .time::before {
