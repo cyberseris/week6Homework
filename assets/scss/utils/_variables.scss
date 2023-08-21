@@ -591,35 +591,39 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
+/* $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base !default; */
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
   64: $font-size-base * 4,
+  60: $font-size-base * 3.75,
   48: $font-size-base * 3,
   32: $font-size-base * 2,
   28: $font-size-base * 1.75,
   24: $font-size-base * 1.5,
+  22: $font-size-base * 1.375,
   20: $font-size-base * 1.25,
   18: $font-size-base * 1.125,
   16: $font-size-base,
+  14: $font-size-base * 0.875,
   0:0,
   caption:$font-size-base * 0.875 ///14px
   ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * .5 !default;
-$headings-font-family: null !default;
+/* $headings-margin-bottom: $spacer * .5 !default; */
+/* $headings-font-family: null !default;
 $headings-font-style: null !default;
-$headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+$headings-font-weight: 500 !default; */
+/* $headings-line-height: 1.2 !default; */
+$headings-line-height: 1 !default;
 $headings-color: null !default;
 // scss-docs-end headings-variables
 
@@ -655,7 +659,7 @@ $blockquote-font-size: $font-size-base * 1.25 !default;
 $blockquote-footer-color: $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
-$hr-margin-y: $spacer !default;
+/* $hr-margin-y: $spacer !default; */
 $hr-color: inherit !default;
 
 // fusv-disable
@@ -667,7 +671,7 @@ $hr-border-color: null !default; // Allows for inherited colors
 $hr-border-width: $border-width !default;
 $hr-opacity: .25 !default;
 
-$legend-margin-bottom: .5rem !default;
+/* $legend-margin-bottom: .5rem !default; */
 $legend-font-size: 1.5rem !default;
 $legend-font-weight: null !default;
 
@@ -834,7 +838,7 @@ $form-text-color: $text-muted !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom: .5rem !default;
+/* $form-label-margin-bottom: .5rem !default; */
 $form-label-font-size: null !default;
 $form-label-font-style: null !default;
 $form-label-font-weight: null !default;

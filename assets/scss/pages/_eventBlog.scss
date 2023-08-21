@@ -8,11 +8,11 @@
     .day {
         h2 {
             margin: 0px;
-            font-size: 22px;
+            font-size: 22px !important;
 
             @include padFirst {
-                margin-bottom: 126px;
-                font-size: 48px;
+                margin-bottom: 126px !important;
+                font-size: 48px !important;
             }
         }
     }
