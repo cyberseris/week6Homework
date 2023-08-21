@@ -2,6 +2,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     background: $gray31;
+    font-family: "Yeseva One", "Noto Serif TC", cursive, serif;
 }
 
 a {
@@ -18,4 +19,14 @@ img {
 .material-symbols-outlined {
     width: 24px;
     height: 24px;
+}
+
+i {
+    font-size: 18px !important;
+    color: #1F1142 !important;
+}
+
+th,
+td {
+    vertical-align: middle;
 }

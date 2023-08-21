@@ -1,3 +1,22 @@
+.icofont-ui-email,
+.icofont-facebook,
+.icofont-phone {
+    width: 32px;
+    height: 32px;
+    color: $white !important;
+    background: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.check-circled {
+    @include mobile {
+        margin-bottom: 18px;
+    }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
