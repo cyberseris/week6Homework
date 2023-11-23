@@ -1,5 +1,8 @@
 # 活動訂票網
 
+# 網址
+https://cyberskey.github.io/week6Homework/
+
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
   - 查看自己版本指令：`node -v`
